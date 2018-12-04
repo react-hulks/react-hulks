@@ -1,0 +1,24 @@
+{
+  "projectName": "react-hulks",
+  "projectOwner": "react-hulks",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "andreoav",
+      "name": "Andreo Vieira",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/508827?v=3",
+      "profile": "https://github.com/andreoav",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "tool"
+      ]
+    }
+  ],
+  "repoType": "github"
+}

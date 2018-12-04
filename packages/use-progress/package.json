@@ -1,0 +1,43 @@
+{
+  "name": "@react-hulks/use-progress",
+  "version": "1.0.0",
+  "description": "A simples progress hook",
+  "keywords": [
+    "react-hooks",
+    "progress"
+  ],
+  "author": "Andreo Vieira <contato@andreovieira.com.br>",
+  "homepage": "https://github.com/react-hulks/react-hulks#readme",
+  "license": "MIT",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "typings": "dist/main/index.d.js",
+  "source": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-hulks/react-hulks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-hulks/react-hulks/issues"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  }
+}

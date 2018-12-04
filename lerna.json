@@ -1,0 +1,11 @@
+{
+  "npmClient": "yarn",
+  "npmClientArgs": ["--no-lockfile"],
+  "command": {
+    "publish": {
+      "ignoreChanges": ["**/*.md", "**/example/**", "**/tests/**"]
+    }
+  },
+  "useWorkspaces": true,
+  "version": "independent"
+}

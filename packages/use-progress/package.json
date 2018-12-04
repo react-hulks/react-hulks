@@ -1,6 +1,6 @@
 {
   "name": "@react-hulks/use-progress",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A simples progress hook",
   "keywords": [
     "react-hooks",

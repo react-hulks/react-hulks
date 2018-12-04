@@ -43,6 +43,6 @@
       "*": ["node_modules", "packages"]
     }
   },
-  "exclude": ["node_modules/**", "**/?(*.)+(spec|test).ts?(x)"],
+  "exclude": ["node_modules/**"],
   "compileOnSave": false
 }

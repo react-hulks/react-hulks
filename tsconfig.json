@@ -36,7 +36,7 @@
     "jsx": "react",
     "lib": ["es2017", "dom"],
     "types": ["jest", "node"],
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types", "./types"],
     "baseUrl": "./",
     "paths": {
       "@react-hulks/*": ["packages/*/src"],

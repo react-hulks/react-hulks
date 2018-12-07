@@ -1,20 +1,21 @@
 import formatCPF from '@brazilian-utils/format-cpf';
-import isValid from '@brazilian-utils/is-valid-cpf';
+import isCPFValid from '@brazilian-utils/is-valid-cpf';
 
 import { useState } from 'react';
 
-export default function useCPF(cpf: string) {
-  const [formattedCPF, setFormattedCPF] = useState<string>(formatCPF(cpf));
+export interface API {
+  setCPF: React.Dispatch<React.SetStateAction<string>>;
+  isValid: boolean;
+}
 
-  const updateCPF = (cpf: string) => {
-    setFormattedCPF(formatCPF(cpf));
-  };
+export default function useCPF(input: string): [string, API] {
+  const [CPF, setCPF] = useState<string>(input);
 
   return [
-    formattedCPF,
+    formatCPF(CPF),
     {
-      setCPF: updateCPF,
-      isValid: () => isValid(formatCPF)
+      setCPF,
+      isValid: isCPFValid(CPF)
     }
   ];
 }

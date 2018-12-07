@@ -36,13 +36,13 @@
     "jsx": "react",
     "lib": ["es2017", "dom"],
     "types": ["jest", "node"],
-    "typeRoots": ["node_modules/@types", "./types"],
+    "typeRoots": ["node_modules/@types", "packages/@types"],
     "baseUrl": "./",
     "paths": {
       "@react-hulks/*": ["packages/*/src"],
-      "*": ["node_modules", "packages"]
+      "*": ["node_modules", "packages", "packages/@types/*"]
     }
   },
-  "exclude": ["node_modules/**"],
+  "exclude": ["node_modules/**", "types"],
   "compileOnSave": false
 }
